@@ -1,0 +1,458 @@
+
+:root{
+   --color-de-fundo:#F5F5F5;
+   --corlor-de-link:#EAF2FD;
+   --color-gris:#464646;
+}
+
+body {
+    background-color: var(--color-de-fundo) ;
+    font-family: Arial, Helvetica, sans-serif;
+    color:var(--color-gris);
+    line-height: 1;
+    overflow-x: hidden;
+}
+
+/**Sección Menu*/
+
+.menu{
+    height: 100px;
+    padding: 5px 30px 5px 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu__header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo {
+    height: 22px;
+}
+
+.menu__list {
+    display: none;
+}
+.menu__list li a {
+    color:var(--color-gris);
+}
+
+@media (min-width: 1024px) {
+    .menu {
+        padding: 20px 100px;
+    }
+    .logo {
+        font-size: 16px;
+    }
+    .menu__list {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        font-size: 16px;
+    }
+    .contacto {
+        display: none;
+    }
+}
+
+/**Sección Title*/
+
+.formacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+}
+.title__div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.title__profile {
+    margin:auto;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+.title__container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.title_info {
+    font-family: Raleway;
+    font-style: italic;
+    font-weight: 400;
+    text-align: center;
+    font-size: 16px;
+    padding: 20px;
+}
+.title__network {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.title__network__item {
+    padding: 10px;
+    font-size: 20px;
+}
+
+@media (min-width: 1024px) {
+    .formacion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .title__div {
+        display: flex;
+        flex-direction: row-reverse;
+        width: 100%;
+    }
+    .title__container {
+        width:80% ;
+        height: 80%;
+    }
+    .title__profile {
+        width: 20%;
+    }
+    .title_info {
+        font-family: Raleway;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 20px;
+        padding: 20px;
+    }
+    .title__network {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    .title__network__item {
+        height: 20px;
+        width: 320px;
+        gap: 8px;
+        
+    }
+}
+   /** Sección sobre mi*/
+
+.about {
+    background-color: aqua;
+    width: 100%;
+}
+.about__title {
+    font-family: Raleway;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 30px;
+}
+
+    /**Sección de Skills*/
+
+.skills__title {
+    font-family:Raleway ;
+    font-weight: 700;
+    font-size: 35px;
+    font-style: italic;
+    padding: 10px;
+    text-align: center;
+}
+.skills__line {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.skills__box {
+    border: 1px solid  var(--color-gris);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+@media (min-width: 1024px) {
+    .skills__title {
+        font-family: Raleway;
+        font-weight: 700;
+        font-size: 25px;
+        font-style: italic;
+        text-align: center;
+    }
+    .skills__line {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+    }
+    .skills__box {
+        border: 1px solid  var(--color-gris);
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+}
+
+   /**Sección de Hobbies*/
+
+.hobbies__title {
+    font-family:Raleway ;
+    font-weight: 700;
+    font-size: 35px;
+    font-style: italic;
+    padding: 10px;
+    text-align: center;
+}
+
+.hobbies__line {
+    display: grid;
+    gap: 20px;
+}
+
+.hobbies__box {
+    border: 1px solid  var(--color-gris);
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+@media (min-width: 1024px) {
+    .hobbies__title {
+        font-family:Raleway ;
+        font-weight: 700;
+        font-size: 35px;
+        font-style: italic;
+        padding: 10px;
+        text-align: center;
+    }
+    
+    .hobbies__line {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .hobbies__box {
+        border: 1px solid  var(--color-gris);
+        text-align: center;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+}
+
+/**Formación académica*/
+
+.academic__title {
+    font-family:Raleway ;
+    font-weight: 700;
+    font-size: 35px;
+    font-style: italic;
+    padding-top: 50px;
+    text-align: center;
+}
+.academic__courses {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.academic__courses__box {
+    align-items: end;
+}
+
+.academic__courses__item__img {
+    margin:auto;
+    height: 200px;
+    width: 200px;
+}
+@media (min-width: 1024px) {
+    .academic__title {
+        font-family:Raleway ;
+        font-weight: 700;
+        font-size: 35px;
+        font-style: italic;
+        padding: 10px;
+        text-align: center;
+    }
+    .academic__courses {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    .academic__courses__box {
+        justify-content: space-between;
+    }
+}
+
+  /**Experiencia Profesional/Proyectos*/
+
+.experience__section__title {
+    font-family:Raleway ;
+    font-weight: 700;
+    font-size: 35px;
+    font-style: italic;
+    padding: 10px;
+    text-align: center;
+}
+
+.experiencie__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.experience__img {
+    margin:50px;
+    height: 300px;
+    width: 300px;
+}
+.experiencia__botao--repo {
+    background-color: #3498db;
+     color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.experience__botao--demo {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+    .experience__section__title {
+        font-family:Raleway ;
+        font-weight: 700;
+        font-size: 35px;
+        font-style: italic;
+        padding: 10px;
+        text-align: center;
+    }
+    .experiencie__box {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .experience__img {
+        margin:50px;
+        height: 300px;
+        width: 300px;
+    }
+}
+
+   /**Sección de Contacto*/
+
+.formcontato__contacto {
+    display: flex;
+    flex-direction: column;
+}
+.formcontato--esquerda {
+    display: none;
+} 
+.formcontato__title {
+    font-family:Raleway ;
+    font-weight: 700;
+    font-size: 35px;
+    font-style: italic;
+    padding: 10px;
+    text-align: center;
+}
+.formcontato__subtext {
+    font-family:Raleway ;
+    font-weight: 400;
+    font-size: 16px;
+    font-style: italic;
+    padding: 20px;
+    text-align: center;
+}
+.formcontato__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+.formcontato__input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.formcontato__botao {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+
+@media (min-width: 1024px) {
+    .formcontato__contacto {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .formcontato--esquerda {
+        display:flex;
+        width: 300px;
+        height: 400px;
+
+    } 
+    .formcontato__title {
+        font-family:Raleway ;
+        font-weight: 700;
+        font-size: 35px;
+        font-style: italic;
+        padding: 10px;
+        text-align: center;
+    }
+    .formcontato__subtext {
+        font-family:Raleway ;
+        font-weight: 400;
+        font-size: 16px;
+        font-style: italic;
+        padding: 10px;
+        text-align: center;
+    }
+    .formcontato__form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .formcontato__botao {
+        background-color: #3498db;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 40px;
+    }
+}
+
+.footer__rodape {
+    font-family:Raleway ;
+    font-weight: 400;
+    font-size: 16px;
+    font-style: italic;
+    padding: 10px;
+    text-align: center;
+}
+
+@media (min-width: 1024px) {
+    .footer__rodape {
+        font-family:Raleway ;
+        font-weight: 400;
+        font-size: 16px;
+        font-style: italic;
+        padding: 10px;
+        text-align: center;
+    }
+}
